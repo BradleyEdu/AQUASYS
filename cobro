@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <script src="https://kit.fontawesome.com/4a19922e7f.js" crossorigin="anonymous"></script>
+    <title>AQUASYS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="CSS/estilos.css">
+
+    <!-- Bootstrap CSS alt+shift+a-->
+    <link rel="stylesheet" type="text/css" href="bootstrap-5.1.3-dist/css/bootstrap.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Responsive TopNav -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+  <div class="modal"  id="buscar" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title">Cobranza</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+                    <form method="POST" action="insertCat.php" >
+                        <div class="mb-3">
+                            <label for="categoria" class="form-label">Se debe pagar</label>
+                            <input type="text" class="form-control" id="categoria"  name="categoria">
+                            <div id="emailHelp" class="form-text"></div>
+                        </div>
+                      
+                       
+                    </form>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary">Pagar</button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <header>
+        <div></div>
+        <h1><img id="logo" src="img/logo.png"></h1>
+        <!-- <img id="logo" class="itemHeader" src="img/user.png"> -->
+    </header>
+    
+
+    <main class="mainC">
+      
+        <form class="row g-3">
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Número de Contrato</label>
+              <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+              <label for="inputPassword4" class="form-label">RFC</label>
+              <input type="password" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="inputAddress" >
+            </div>
+            <div class="col-12">
+              <label for="inputAddress2" class="form-label">Apellido Paterno</label>
+              <input type="text" class="form-control" id="inputAddress2" >
+            </div>
+            <div class="col-md-12">
+              <label for="inputCity" class="form-label">Dirección</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Información Correcta
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#buscar">Buscar                        
+              </button>
+              
+            </div>
+          </form>
+    </main>
+    
+    <footer>
+        
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/
+popper.min.js" integrity="sha384-7+zCNj/IqJ95w0160MtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="
+anonymous"> </script>
+
+<script src="bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+
+<scriptsrc="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="
+sha384-QJHtvGhmr9X0IpI6YVutG+2Q0K9T+ZnN4kzFN1RtK3ZEFEIsxhImW15/YESVpZ13" crossorigin="anonymous">
+</script>
+
+<script type="text/javascript" src="js/script.js"></script>
+
+</html>
